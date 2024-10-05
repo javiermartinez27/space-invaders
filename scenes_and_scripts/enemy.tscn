@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6oqix5f1hfhw"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/enemy.gd" id="1_lbc6l"]
+[ext_resource type="Texture2D" uid="uid://bl2hvy838l2xd" path="res://assets/green.png" id="1_oek8u"]
+
+[node name="Enemy" type="Area2D"]
+position = Vector2(42, 33)
+script = ExtResource("1_lbc6l")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(27, 18.5)
+scale = Vector2(2.28125, 2.05078)
+polygon = PackedVector2Array(-4, 16, 4, 16, 4, 12, 12, 12, 12, 8, 12, 4, 16, 4, 16, 0, 20, 0, 20, -4, 8, -16, -8, -16, -20, -3, -20, 0, -16, 0, -16, 4, -12, 4, -12, 12, -4, 12)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(26.5, 18)
+scale = Vector2(2.325, 2.125)
+texture = ExtResource("1_oek8u")
