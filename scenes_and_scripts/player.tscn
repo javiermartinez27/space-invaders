@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw41aug5450oo"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/player.gd" id="1_cgdrq"]
+[ext_resource type="Texture2D" uid="uid://d1laxrwfln4sk" path="res://assets/player.png" id="1_qj1wi"]
+
+[node name="PlayerCharacterBody2D" type="CharacterBody2D"]
+editor_description = "The players inital position is defined in code
+"
+position = Vector2(414, 769)
+motion_mode = 1
+script = ExtResource("1_cgdrq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 0.500025)
+scale = Vector2(1.4, 1.16667)
+texture = ExtResource("1_qj1wi")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(-8, -3, -33, -3, -33, 4, -42, 4, -42, 18, 42, 18, 42, 4, 33, 4, 33, -3, 8, -3, 8, -10, -8, -10)
