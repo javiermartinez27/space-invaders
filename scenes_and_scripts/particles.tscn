@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwase5bwdgxxb"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_binsm"]
+lifetime_randomness = 0.3
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(1.14, -0.53, 2.08165e-12)
+emission_shape_scale = Vector3(30.78, 8.85, 1)
+emission_shape = 1
+emission_sphere_radius = 1.0
+angle_min = -52.0
+angle_max = 258.9
+inherit_velocity_ratio = 1.0
+velocity_pivot = Vector3(0.81, 2.08165e-12, 2.08165e-12)
+spread = 102.64
+initial_velocity_min = 7.8
+initial_velocity_max = 7.8
+angular_velocity_min = 11.3
+angular_velocity_max = 11.3
+gravity = Vector3(0, 98, 0)
+linear_accel_min = 17.5
+linear_accel_max = 18.3
+radial_accel_min = 31.46
+radial_accel_max = 55.06
+
+[sub_resource type="Gradient" id="Gradient_4tgg1"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0.54902, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_f5kji"]
+gradient = SubResource("Gradient_4tgg1")
+width = 5
+height = 5
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0.275229, 0.736239)
+metadata/_snap_enabled = true
+metadata/_snap_count = 100
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+position = Vector2(196, 141)
+rotation = 1.90415
+scale = Vector2(1.4, 1.4)
+amount = 158
+sub_emitter = NodePath(".")
+process_material = SubResource("ParticleProcessMaterial_binsm")
+texture = SubResource("GradientTexture2D_f5kji")
+lifetime = 2.0
+one_shot = true
+speed_scale = 3.76
+randomness = 0.04
+interp_to_end = 0.182
