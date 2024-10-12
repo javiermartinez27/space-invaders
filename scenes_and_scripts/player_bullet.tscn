@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://hm1j2wfwvaio"]
 
-[ext_resource type="Script" path="res://scenes_and_scripts/bullet.gd" id="1_60mdt"]
+[ext_resource type="Script" path="res://scenes_and_scripts/player_bullet.gd" id="1_fyyfi"]
 
 [sub_resource type="Gradient" id="Gradient_jp816"]
 offsets = PackedFloat32Array(1)
@@ -14,7 +14,7 @@ size = Vector2(6, 12)
 
 [node name="Bullet" type="Area2D"]
 position = Vector2(128, 102)
-script = ExtResource("1_60mdt")
+script = ExtResource("1_fyyfi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.0234374, 12.75)

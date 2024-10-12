@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var speed = 500
 @export var time_between_shots = 0.3
 
-var Bullet = preload("res://scenes_and_scripts/bullet.tscn")
+var PlayerBullet = preload("res://scenes_and_scripts/player_bullet.tscn")
 
 var screen_size
 var time_since_last_shot = 0.0
@@ -43,7 +43,7 @@ func check_shooting(delta):
 			
 		
 func spawn_bullet(delta):
-	var bullet_instance = Bullet.instantiate()
+	var bullet_instance = PlayerBullet.instantiate()
 	bullet_instance.position = Vector2(position.x, position.y - 20)
 	get_tree().current_scene.add_child(bullet_instance)
 
