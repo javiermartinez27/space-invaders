@@ -1,55 +1,126 @@
-[gd_scene load_steps=4 format=3 uid="uid://r6jlp8fwi3v4"]
+[gd_scene load_steps=5 format=3 uid="uid://r6jlp8fwi3v4"]
 
 [ext_resource type="PackedScene" uid="uid://bw41aug5450oo" path="res://scenes_and_scripts/player.tscn" id="1_sh5xc"]
+[ext_resource type="Texture2D" uid="uid://bxty4ah4t7g7x" path="res://assets/red.png" id="2_6kxin"]
 [ext_resource type="Texture2D" uid="uid://cpn88w8a4vvkw" path="res://assets/yellow.png" id="2_lw4mq"]
 [ext_resource type="PackedScene" uid="uid://b6oqix5f1hfhw" path="res://scenes_and_scripts/enemy.tscn" id="2_qaah3"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Enemy13" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(519, 132)
+health = 3
+
+[node name="Sprite2D" parent="Enemy13" index="1"]
+texture = ExtResource("2_6kxin")
+
+[node name="Enemy14" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(637, 130)
+health = 3
+
+[node name="Sprite2D" parent="Enemy14" index="1"]
+texture = ExtResource("2_6kxin")
+
+[node name="Enemy15" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(760, 132)
+health = 3
+
+[node name="Sprite2D" parent="Enemy15" index="1"]
+texture = ExtResource("2_6kxin")
+
+[node name="Enemy12" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(399, 132)
+health = 3
+
+[node name="Sprite2D" parent="Enemy12" index="1"]
+texture = ExtResource("2_6kxin")
+
+[node name="Enemy11" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(279, 132)
+health = 3
+
+[node name="Sprite2D" parent="Enemy11" index="1"]
+texture = ExtResource("2_6kxin")
+
+[node name="Enemy10" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(151, 132)
+health = 3
+
+[node name="Sprite2D" parent="Enemy10" index="1"]
+texture = ExtResource("2_6kxin")
+
 [node name="Enemy9" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(420, 356)
+position = Vector2(515, 365)
 health = 2
 
 [node name="Sprite2D" parent="Enemy9" index="1"]
 texture = ExtResource("2_lw4mq")
 
+[node name="Enemy16" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(636, 365)
+health = 2
+
+[node name="Sprite2D" parent="Enemy16" index="1"]
+texture = ExtResource("2_lw4mq")
+
+[node name="Enemy17" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(761, 365)
+health = 2
+
+[node name="Sprite2D" parent="Enemy17" index="1"]
+texture = ExtResource("2_lw4mq")
+
 [node name="Enemy8" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(300, 356)
+position = Vector2(395, 365)
 health = 2
 
 [node name="Sprite2D" parent="Enemy8" index="1"]
 texture = ExtResource("2_lw4mq")
 
 [node name="Enemy7" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(180, 356)
+position = Vector2(275, 365)
 health = 2
 
 [node name="Sprite2D" parent="Enemy7" index="1"]
 texture = ExtResource("2_lw4mq")
 
 [node name="Enemy6" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(60, 356)
+position = Vector2(155, 365)
 health = 2
 
 [node name="Sprite2D" parent="Enemy6" index="1"]
 texture = ExtResource("2_lw4mq")
 
 [node name="Enemy2" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(428, 472)
+position = Vector2(157, 579)
 
 [node name="Enemy3" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(548, 473)
+position = Vector2(277, 580)
 
 [node name="Enemy4" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(668, 473)
+position = Vector2(397, 580)
 
 [node name="Enemy5" parent="." instance=ExtResource("2_qaah3")]
-position = Vector2(788, 473)
+position = Vector2(517, 580)
+
+[node name="Enemy18" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(636, 579)
+
+[node name="Enemy19" parent="." instance=ExtResource("2_qaah3")]
+position = Vector2(759, 579)
 
 [node name="PlayerCharacterBody2D" parent="." instance=ExtResource("1_sh5xc")]
 position = Vector2(405, 1154)
 
+[editable path="Enemy13"]
+[editable path="Enemy14"]
+[editable path="Enemy15"]
+[editable path="Enemy12"]
+[editable path="Enemy11"]
+[editable path="Enemy10"]
 [editable path="Enemy9"]
+[editable path="Enemy16"]
+[editable path="Enemy17"]
 [editable path="Enemy8"]
 [editable path="Enemy7"]
 [editable path="Enemy6"]
