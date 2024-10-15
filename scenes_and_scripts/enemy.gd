@@ -15,8 +15,8 @@ var enemy_width
 var enemy_height
 var should_move_down = false
 # Minimum and maximum interval (in seconds) between bullet spawns
-var min_spawn_time = 0.5
-var max_spawn_time = 3.0
+var min_spawn_time = 2.0
+var max_spawn_time = 5.0
 
 # Timer to control random bullet spawning
 var bullet_timer
