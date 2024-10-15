@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://scenes_and_scripts/enemy_bullet.gd" id="1_lfosq"]
 
-[sub_resource type="Gradient" id="Gradient_gppf3"]
+[sub_resource type="Gradient" id="Gradient_e7fok"]
 offsets = PackedFloat32Array(1)
 colors = PackedColorArray(1, 1, 1, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_02ksg"]
-gradient = SubResource("Gradient_gppf3")
+gradient = SubResource("Gradient_e7fok")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tgcs0"]
 size = Vector2(9, 20.5)

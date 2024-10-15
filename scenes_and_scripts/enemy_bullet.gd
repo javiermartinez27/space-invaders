@@ -2,6 +2,7 @@ extends Area2D
 @export var speed = 600
 
 const Player = preload("res://scenes_and_scripts/player.gd")
+const CoverPortion = preload("res://scenes_and_scripts/cover_portion.gd")
 
 var maximum_position
 # Called when the node enters the scene tree for the first time.
@@ -16,5 +17,5 @@ func _process(delta):
 		queue_free() # Removes bullet when off-screen
 		
 func _on_area_entered(area):
-	if area.get_parent() is Player:
+	if area.get_parent() is Player or area is CoverPortion:
 		queue_free()

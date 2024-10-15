@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://r6jlp8fwi3v4"]
+[gd_scene load_steps=6 format=3 uid="uid://r6jlp8fwi3v4"]
 
 [ext_resource type="PackedScene" uid="uid://bw41aug5450oo" path="res://scenes_and_scripts/player.tscn" id="1_sh5xc"]
 [ext_resource type="Texture2D" uid="uid://bxty4ah4t7g7x" path="res://assets/red.png" id="2_6kxin"]
 [ext_resource type="Texture2D" uid="uid://cpn88w8a4vvkw" path="res://assets/yellow.png" id="2_lw4mq"]
 [ext_resource type="PackedScene" uid="uid://b6oqix5f1hfhw" path="res://scenes_and_scripts/enemy.tscn" id="2_qaah3"]
+[ext_resource type="PackedScene" uid="uid://cw5s2emavt3fr" path="res://scenes_and_scripts/cover_portion.tscn" id="5_8hw46"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -113,6 +114,230 @@ position = Vector2(636, 579)
 
 [node name="Enemy19" parent="enemies" instance=ExtResource("2_qaah3")]
 position = Vector2(759, 579)
+
+[node name="cover1" type="CanvasGroup" parent="."]
+
+[node name="CoverPortion2" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 990)
+
+[node name="CoverPortion3" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 990)
+
+[node name="CoverPortion4" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 990)
+
+[node name="CoverPortion5" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1010)
+
+[node name="CoverPortion6" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 1010)
+
+[node name="CoverPortion7" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 1010)
+
+[node name="CoverPortion8" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1010)
+
+[node name="CoverPortion9" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(105, 1010)
+
+[node name="CoverPortion10" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1030)
+
+[node name="CoverPortion11" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1030)
+
+[node name="CoverPortion12" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 990)
+
+[node name="CoverPortion13" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 970)
+
+[node name="CoverPortion14" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(200, 1010)
+
+[node name="CoverPortion" parent="cover1" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 970)
+
+[node name="cover2" type="CanvasGroup" parent="."]
+position = Vector2(178, 0)
+
+[node name="CoverPortion2" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 990)
+
+[node name="CoverPortion3" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 990)
+
+[node name="CoverPortion4" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 990)
+
+[node name="CoverPortion5" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1010)
+
+[node name="CoverPortion6" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 1010)
+
+[node name="CoverPortion7" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 1010)
+
+[node name="CoverPortion8" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1010)
+
+[node name="CoverPortion9" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(105, 1010)
+
+[node name="CoverPortion10" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1030)
+
+[node name="CoverPortion11" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1030)
+
+[node name="CoverPortion12" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 990)
+
+[node name="CoverPortion13" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 970)
+
+[node name="CoverPortion14" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(200, 1010)
+
+[node name="CoverPortion" parent="cover2" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 970)
+
+[node name="cover3" type="CanvasGroup" parent="."]
+position = Vector2(348, -2)
+
+[node name="CoverPortion2" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 990)
+
+[node name="CoverPortion3" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 990)
+
+[node name="CoverPortion4" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 990)
+
+[node name="CoverPortion5" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1010)
+
+[node name="CoverPortion6" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 1010)
+
+[node name="CoverPortion7" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 1010)
+
+[node name="CoverPortion8" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1010)
+
+[node name="CoverPortion9" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(105, 1010)
+
+[node name="CoverPortion10" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1030)
+
+[node name="CoverPortion11" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1030)
+
+[node name="CoverPortion12" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 990)
+
+[node name="CoverPortion13" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 970)
+
+[node name="CoverPortion14" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(200, 1010)
+
+[node name="CoverPortion" parent="cover3" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 970)
+
+[node name="cover4" type="CanvasGroup" parent="."]
+position = Vector2(516, -2)
+
+[node name="CoverPortion2" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 990)
+
+[node name="CoverPortion3" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 990)
+
+[node name="CoverPortion4" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 990)
+
+[node name="CoverPortion5" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1010)
+
+[node name="CoverPortion6" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 1010)
+
+[node name="CoverPortion7" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 1010)
+
+[node name="CoverPortion8" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1010)
+
+[node name="CoverPortion9" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(105, 1010)
+
+[node name="CoverPortion10" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1030)
+
+[node name="CoverPortion11" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1030)
+
+[node name="CoverPortion12" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 990)
+
+[node name="CoverPortion13" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 970)
+
+[node name="CoverPortion14" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(200, 1010)
+
+[node name="CoverPortion" parent="cover4" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 970)
+
+[node name="cover5" type="CanvasGroup" parent="."]
+position = Vector2(684, -4)
+
+[node name="CoverPortion2" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 990)
+
+[node name="CoverPortion3" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 990)
+
+[node name="CoverPortion4" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 990)
+
+[node name="CoverPortion5" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1010)
+
+[node name="CoverPortion6" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 1010)
+
+[node name="CoverPortion7" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 1010)
+
+[node name="CoverPortion8" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1010)
+
+[node name="CoverPortion9" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(105, 1010)
+
+[node name="CoverPortion10" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(124, 1030)
+
+[node name="CoverPortion11" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 1030)
+
+[node name="CoverPortion12" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(181, 990)
+
+[node name="CoverPortion13" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(162, 970)
+
+[node name="CoverPortion14" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(200, 1010)
+
+[node name="CoverPortion" parent="cover5" instance=ExtResource("5_8hw46")]
+position = Vector2(143, 970)
 
 [editable path="enemies/Enemy13"]
 [editable path="enemies/Enemy14"]
