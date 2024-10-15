@@ -2,8 +2,11 @@ extends CharacterBody2D
 
 @export var speed = 500
 @export var time_between_shots = 0.3
+@export var health = 3
 
 var PlayerBullet = preload("res://scenes_and_scripts/player_bullet.tscn")
+const Particles = preload("res://scenes_and_scripts/particles.tscn")
+const EnemyBullet = preload("res://scenes_and_scripts/enemy_bullet.gd")
 
 var screen_size
 var time_since_last_shot = 0.0
@@ -46,4 +49,15 @@ func spawn_bullet(delta):
 	var bullet_instance = PlayerBullet.instantiate()
 	bullet_instance.position = Vector2(position.x, position.y - 20)
 	get_tree().current_scene.add_child(bullet_instance)
+	
+	
 
+
+func _on_area_2d_area_entered(area):
+	if area is EnemyBullet:
+		health -= 1
+		if health == 0:
+			queue_free()
+			var particles_instance = Particles.instantiate() 
+			particles_instance.position = position + Vector2(15,5)
+			get_tree().current_scene.add_child(particles_instance)
